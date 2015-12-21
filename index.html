@@ -1,22 +1,81 @@
 
 <html>
 <head>
-<title>hello</title>
+<title>CRNKSHFT is Coming in 2016</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" href="http://crnkshft.com/compiled/flipclock.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/compiled/flipclock.js"></script>
 
 <style type="text/css">
 
 body {
-	background-image: url(http://www.bassfestevents.com/images/background.jpg);
+	background-image: url('images/background.jpg');
 	background-position: center top;
-	color:white;
 	
 }
-
 a:hover { opacity: 0.5 }
+
 </style>
 </head>
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<center>this page is totally gay</center>
+
+
+<table style="width:100%; height:100%" border="0" cellspacing="0" cellpadding="0">  
+   <tr>    
+       <td style="vertical-align:middle">
+	     <table width="100%"  border="0" cellspacing="0" cellpadding="0">	
+		   <tr>	  
+		     <td align="center">	
+			 
+			 <table width="650" align="center" height="143" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+<center><span style="color:white;font-size:34px;font-weight:bold;font-family:Arial, Helvetica, sans-serif;">CRNKSHFT<br>is<br>Coming</span></center>
+<div class="clock"></div>
+<center>
+<a href="http://www.facebook.com/crnkshft" target="_blank" title="Facebook"><img src="http://crnkshft.com/images/facebook.png" border="0"></a>
+<a href="http://www.soundcloud.com/crnkshft" target="_blank" title="SoundCloud"><img src="http://crnkshft.com/images/soundcloud.png" border="0"></a>
+<a href="https://twitter.com/crnkshftband" target="_blank" title="Twitter"><img src="http://crnkshft.com/images/twitter.png" border="0"></a>
+<a href="https://www.youtube.com/channel/UCUeyh8295pKJnZeZFrRq2vA" target="_blank" title="YouTube"><img src="http://crnkshft.com/images/youtube.png" border="0"></a>
+<a href="https://www.instagram.com/crnkshftband" target="_blank" title="Instagram"><img src="http://crnkshft.com/images/instagram.png" border="0"></a>
+<a href="mailto:info@crnkshft.com" target="_blank" title="Email"><img src="http://crnkshft.com/images/mail.png" border="0"></a>
+
+</center>
+
+<div class="message"></div>
+
+	<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 11,11);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>
+		</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+
 </body>
 </html>
